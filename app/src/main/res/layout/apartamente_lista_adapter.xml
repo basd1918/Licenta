@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:id="@+id/Rel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBFFFFFF"
+    android:padding="15dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNume"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:text="Nume:"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvNume"
+        android:text="nume"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:id="@+id/tvNume2"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNrPers"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_below="@+id/tvNume"
+        android:text="Nr. pers:"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNrPers2"
+        android:layout_toRightOf="@+id/tvNrPers"
+        android:text="pers"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tvNume2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvApartament"
+        android:textColor="#000"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Apartament"
+        android:textSize="28dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>
+</RelativeLayout>

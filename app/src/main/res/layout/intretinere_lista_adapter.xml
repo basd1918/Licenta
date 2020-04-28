@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+android:layout_height="match_parent">
+<RelativeLayout
+    android:id="@+id/Rel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBFFFFFF"
+    android:padding="15dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTotal"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:text="Total:"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvTotal"
+        android:text="total"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:id="@+id/tvTotal2"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvRestanta"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_below="@+id/tvTotal"
+        android:text="Restanță:"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvRestanta2"
+        android:layout_toRightOf="@+id/tvRestanta"
+        android:text="restanta"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tvTotal2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvLuna"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_below="@+id/tvRestanta"
+        android:text="Luna:"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvLuna2"
+        android:layout_toRightOf="@+id/tvLuna"
+        android:text="luna"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tvRestanta2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAn"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_below="@+id/tvLuna"
+        android:text="Anul:"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAn2"
+        android:layout_toRightOf="@+id/tvLuna"
+        android:text="an"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tvLuna"/>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvApartament_Cheltuieli"
+        android:textColor="#000"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Apartament"
+        android:textSize="28dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>
+</RelativeLayout>

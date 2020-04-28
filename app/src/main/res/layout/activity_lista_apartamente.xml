@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/oras4"
+tools:context=".ListaApartamenteActivity">
+
+<TextView
+   android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="20dp"
+    android:gravity="center_horizontal"
+    android:background="#88141414"
+    android:text="Lista Apartamente"
+    android:textAlignment="center"
+    android:textColor="#ffffff"
+    android:textSize="40dp" />
+
+    <TextView
+        android:textAlignment="center"
+        android:id="@+id/textViewWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Listă Apartamente"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="25sp"
+        android:typeface="serif"/>
+
+<ListView
+    android:layout_marginTop="70dp"
+    android:id="@+id/listViewApartamenteLista"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></ListView>
+
+</RelativeLayout>

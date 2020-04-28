@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddIntretinere"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#dddeee">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <Button
+        android:id="@+id/butonDialogInfoCalculeaza"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/info_icon"
+        android:layout_gravity="right"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adaugă întreținere"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="25sp"
+        android:typeface="serif"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="#E13464AD"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Luna"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:textColor="#fff"
+            android:layout_marginRight="5dp"/>
+        <Spinner
+            android:id="@+id/spinnerLuna"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginRight="30dp"
+            android:ems="10"
+            android:hint="Luna"
+            android:background="#B7FFFFFF"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            tools:layout_editor_absoluteX="99dp"
+            tools:layout_editor_absoluteY="44dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anul"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="14dp"
+            android:layout_marginRight="5dp"/>
+        <EditText
+            android:id="@+id/editTextAn"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:background="#B7FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="10dp" />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearAddCheltAdministrative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:visibility="visible">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#3B1872E0"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valoare apă "
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/editTextPretMetruApa"
+            android:layout_width="90dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:background="#D0FFFFFF"
+            android:ems="10"
+            android:layout_marginBottom="5dp"
+            android:inputType="numberDecimal"
+            android:padding="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lei/mc "
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cheltuieli efectuate de asociație"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+
+
+        <EditText
+            android:id="@+id/editTextCheltAdmin"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:ems="10"
+            android:layout_marginBottom="5dp"
+            android:hint="Cheltuieli administrative"
+            android:inputType="numberDecimal"
+            android:padding="10dp" />
+        <EditText
+            android:id="@+id/editTextSalubritate"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="#fff"
+            android:ems="10"
+            android:hint="Salubritate"
+            android:inputType="numberDecimal"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/editTextCurent"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="#fff"
+            android:ems="10"
+            android:hint="Energie electrică"
+            android:inputType="numberDecimal"
+            android:padding="10dp" />
+        <EditText
+            android:id="@+id/editTextSalariuAdmin"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="#fff"
+            android:ems="10"
+            android:hint="Salariu administrator"
+            android:inputType="numberDecimal"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/editTextAscensor"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="#fff"
+            android:ems="10"
+            android:hint="Întreținere ascensor"
+            android:inputType="numberDecimal"
+            android:padding="10dp" />
+
+
+
+        <EditText
+            android:id="@+id/editTextCuratenie"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="#fff"
+            android:ems="10"
+            android:hint="Curățenie scară"
+            android:inputType="numberDecimal"
+            android:padding="10dp" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/buttonNextCheltPersonale"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Pagina următoare"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:background="#303F9F"
+        android:typeface="serif"
+        android:onClick="AddIntretinere"
+        android:layout_marginBottom="30dp"/>
+</LinearLayout>
+</ScrollView>

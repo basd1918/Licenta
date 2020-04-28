@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AchitaIntretinereActivity"
+    android:background="#DDDEEE">
+
+    <LinearLayout
+
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <Button
+            android:id="@+id/butonDialogInfoAchita"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/info_icon"
+            android:layout_gravity="right"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Achită întreținerea"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="25sp"
+            android:typeface="serif"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#943F51B5"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Luna"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginRight="5dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerGetLunaAchita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:background="#9fff" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"/>
+
+            <EditText
+                android:id="@+id/editTextGetAn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="#9fff"
+                android:ems="10"
+                android:inputType="number"
+                android:padding="10dp"
+                android:text="2019"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp"
+    android:gravity="center_horizontal">
+        <EditText
+            android:id="@+id/editTextGetAp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="#eeffffff"
+            android:ems="10"
+            android:hint="Apartament"
+            android:inputType="number"
+            android:padding="10dp"
+            android:text="" />
+
+    <Button
+        android:id="@+id/buttonGet"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:text="ok"
+        android:typeface="serif"
+        android:fontFamily="sans-serif-black"
+        android:textSize="20dp"
+        android:background="#303F9F"
+        android:textColor="#fff"
+        android:padding="10dp"/>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal">
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:text="Întreținere:"
+        android:textSize="20dp"
+        android:padding="10.5dp" />
+        <TextView
+            android:id="@+id/textViewGetTotal"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:text=""
+            android:textSize="20dp"
+            android:padding="10.5dp" />
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:text="Restanță:"
+                android:textSize="20dp"
+                android:padding="10.5dp" />
+        <TextView
+            android:id="@+id/textViewGetRestanta"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:text=""
+            android:textSize="20dp"
+            android:padding="10.5dp" />
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:background="#943F51B5">
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:text="Total:"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="10.5dp"/>
+        <TextView
+            android:id="@+id/textViewTotalTotal"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:padding="10.5dp"/>
+</LinearLayout>
+        <TextView
+            android:id="@+id/textViewStatusPlata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Status plata:"
+            android:textColor="#009688"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+
+        <EditText
+            android:id="@+id/editTextIntroducetiNumerar"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#dfff"
+            android:hint="  Introduceți numerar   "
+            android:inputType="numberDecimal"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/buttonRest"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="REST"
+            android:fontFamily="sans-serif-black"
+            android:textSize="20dp"
+            android:background="#8BC34A"
+            android:textColor="#fff"
+            android:typeface="serif"
+            android:padding="10dp"
+            android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/textViewRest"
+                android:layout_width="145dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:background="#dfff"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonAchitaIntretinere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Achită acum"
+            android:padding="10dp"
+            android:textSize="17dp"
+            android:typeface="serif"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="#303F9F"
+            android:textColor="#fff"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

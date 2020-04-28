@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/oras4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/button_organizare"
+            android:layout_width="290dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/home_icon"
+            android:text="Gestiunea apartamentelor"
+            android:background="#ffffff"
+            />
+
+        <Button
+            android:id="@+id/button_veziLista"
+            android:layout_width="290dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:background="#ffffff"
+            android:drawableLeft="@drawable/list_icon"
+            android:text="lista apartamentelor" />
+
+
+        <Button
+            android:id="@+id/button_calculeaza"
+            android:layout_width="290dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:background="#ffffff"
+            android:drawableLeft="@drawable/calculatorm54"
+            android:text="Calculează întreținerea" />
+
+        <Button
+            android:id="@+id/button_TrimiteEmail"
+            android:layout_width="290dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/send_mail_icon"
+            android:text="Trimite cheltuieli prin mail"
+            android:background="#ffffff"
+            />
+
+        <Button
+            android:id="@+id/button_achita"
+            android:layout_width="290dp"
+            android:layout_height="60dp"
+            android:background="#ffffff"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/money_icon"
+            android:text="Achită întreținerea" />
+
+        <Button
+            android:id="@+id/button_TabelCheltuieli"
+            android:layout_width="290dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/list3_icon"
+            android:text="Lista cheltuielilor"
+            android:background="#ffffff"
+            />
+
+        <Button
+            android:id="@+id/button_grafic"
+            android:layout_width="290dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:background="#ffffff"
+            android:drawableLeft="@drawable/graph_icon"
+            android:text="Vezi statistici" />
+
+    </LinearLayout>
+
+
+</ScrollView>

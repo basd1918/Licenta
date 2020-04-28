@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrimiteMailActivity"
+    android:background="@drawable/oras4">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    <Button
+
+        android:id="@+id/buttonInfoEmail"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/info_icon"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trimite mail cu întreținerea"
+        android:layout_marginBottom="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="25sp"
+        android:typeface="serif"/>
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#BC3F51B5"
+        android:padding="15dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Luna"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_marginRight="5dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerGetLunaTrimiteMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:background="#E2FFFFFF" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="An"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"/>
+
+        <EditText
+            android:id="@+id/editTextGetAnTrimiteMail"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#C1FFFFFF"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="10dp"
+            android:text="2019"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/textViewInformatiiMail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:background="#E9FFFFFF"
+            android:text="  ATENTIE:\n1) Tabelul cu intretinerea se completeaza automat in mail,in functie de data aleasa.\nFolositi campul 'Message' pentru adaugarea unor detalii suplimentare.\n2) Adresele de mail se iau automat din baza de date. Pentru modificarea bazei de date acesati setarile din 'Gestiune Apartamente' -> 'Modifica'. In campul 'To' se pot adauga adrese noi sau se pot sterge/modifica adresele existente.\n3) In cazul in care pentru data aleasa nu s-a efectuat calculul intrerinerii,mailul nu va fi trimis si se va afisa un mesaj de eroare."
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+    <TextView
+        android:background="#E9FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Către:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+    <EditText
+        android:background="#E9FFFFFF"
+        android:id="@+id/editTextTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:background="#E9FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subiect:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    <EditText
+        android:background="#E9FFFFFF"
+        android:id="@+id/editTextSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:background="#E9FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mesaj:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    <EditText
+        android:background="#E9FFFFFF"
+        android:id="@+id/editTextMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|top"
+        android:lines="5" />
+
+        <EditText
+            android:visibility="gone"
+            android:background="#E2FFFFFF"
+            android:id="@+id/editTextContinutTabelIntretinere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|top"
+            android:lines="5" />
+
+    <Button
+        android:id="@+id/buttonSendMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trimite"
+        android:background="#FC3949AB"
+        android:typeface="serif"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textColor="#fff"/>
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GraficActivity"
+    android:background="#DDDEEE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Consum apă"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="25sp"
+            android:typeface="serif"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#883F51B5"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:text="Ap."
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp" />
+
+
+                <Button
+                    android:id="@+id/buttonPrev_grafic"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textSize="18sp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/prev_icon"
+                    android:padding="5dp"
+                    />
+                <TextView
+                    android:id="@+id/textViewNrApartament_grafic"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:ems="10"
+                    android:hint="Ap"
+                    android:textAlignment="center"
+                    android:inputType="number"
+                    android:padding="10dp" />
+                <Button
+                    android:id="@+id/buttonNext_grafic"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/next_icon"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"/>
+
+            <EditText
+                android:id="@+id/editTextGetAn_grafic"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="#C9FFFFFF"
+                android:ems="10"
+                android:inputType="number"
+                android:padding="10dp"
+                android:text="2019"/>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:layout_width="match_parent"
+                android:layout_height="400sp"
+                android:id="@+id/bargraph">
+            </com.github.mikephil.charting.charts.BarChart>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#A33F51B5"
+            android:textColor="#fff"
+            android:typeface="serif"
+            android:textSize="17sp"
+            android:text="Vezi cheltuieli totale"
+            android:id="@+id/buttonVeziCheltTotaleGrafic"/>
+    </LinearLayout>
+</ScrollView>

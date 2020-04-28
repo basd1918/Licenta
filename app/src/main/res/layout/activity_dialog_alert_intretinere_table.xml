@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".DialogAlertIntretinereTable"
+android:background="#8A4CAF50">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+    <Button
+        android:id="@+id/buttonDialog_cancel_dialogIntretinere"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:background="@drawable/close_icon2"
+        />
+    <TextView
+        android:id="@+id/tvap"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:text="Apartament:"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_marginBottom="20dp"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/editTextNrAp_dialogIntretinere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/tvap"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:text="Cota Indiviză:"
+        android:layout_below="@+id/tvap"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        />
+
+    <EditText
+        android:id="@+id/editTextIndivizia_dialogIntretinere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextNrAp_dialogIntretinere"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@+id/tvnum"
+        android:background="#fff"
+        android:inputType="numberDecimal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+
+
+
+    <TextView
+        android:id="@+id/tvem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:text="Cota Nr.Pers:"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tvnum"
+        android:textColor="#fff"
+        android:layout_marginBottom="20dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextNrPers_dialogIntretinere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextIndivizia_dialogIntretinere"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@+id/tvem"
+        android:background="#fff"
+        android:inputType="numberDecimal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/tvsup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:text="Apă:"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tvem"
+        android:textColor="#fff"
+        android:layout_marginBottom="20dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextApa_dialogIntretinere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextNrPers_dialogIntretinere"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@+id/tvsup"
+        android:background="#fff"
+        android:inputType="numberDecimal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvnumpers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:text="Energie Electrică:"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/tvsup"
+        android:layout_marginBottom="20dp"
+        android:textColor="#fff"
+        />
+
+    <EditText
+        android:id="@+id/editTextCurent_dialogIntretinere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextApa_dialogIntretinere"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@+id/tvnumpers"
+        android:background="#fff"
+        android:inputType="numberDecimal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvnumper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="20dp"
+        android:text="Total:"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/tvnumpers"
+        android:textColor="#fff"
+        />
+
+    <EditText
+        android:id="@+id/editTextTotal_dialogIntretinere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCurent_dialogIntretinere"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@+id/tvnumper"
+        android:background="#fff"
+        android:inputType="numberDecimal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/tvnumpe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="20dp"
+        android:text="Restanță:"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/tvnumper"
+        android:textColor="#fff"
+        />
+
+    <EditText
+        android:id="@+id/editTextRestanta_dialogIntretinere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTotal_dialogIntretinere"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@+id/tvnumpe"
+        android:background="#fff"
+        android:inputType="numberDecimal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvnump"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="20dp"
+        android:text="Luna:"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginLeft="2dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/tvnumpe"
+        android:textColor="#fff"
+        />
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/editTextLuna_dialogIntretinere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:background="#fff"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_toRightOf="@+id/tvnump"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="2dp"
+        android:layout_below="@id/editTextRestanta_dialogIntretinere"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvnumm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="20dp"
+        android:text="An:"
+        android:layout_marginLeft="2dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/tvnump"
+        android:textColor="#fff"
+        />
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/editTextAn_dialogIntretinere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:background="#fff"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_toRightOf="@+id/tvnump"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/editTextLuna_dialogIntretinere"
+        android:textSize="18sp"/>
+
+
+
+    <TextView
+        android:id="@+id/tvnumstat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="20dp"
+        android:text="Status:"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/tvnumm"
+        android:textColor="#fff"
+        />
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/editTextStatus_dialogIntretinere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="#fff"
+        android:inputType="text"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spinnerStatusDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextAn_dialogIntretinere"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tvnumstat"
+        android:spinnerMode="dropdown"
+        android:textSize="20dp"></Spinner>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/spinnerStatusDialog"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:layout_marginBottom="20dp">
+    <Button
+        android:id="@+id/buttonUpdateIntretinere"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="modifică"
+        android:background="#C3F44336"
+        android:textSize="18sp"
+        android:typeface="serif"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="5dp" />
+
+    <Button
+        android:id="@+id/buttonDeleteIntretinere"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="șterge"
+        android:typeface="serif"
+        android:background="#C3F44336"
+        android:textSize="18sp"
+        android:layout_toRightOf="@+id/buttonUpdateIntretinere"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp" />
+</LinearLayout>
+
+</RelativeLayout>
+
+</ScrollView>

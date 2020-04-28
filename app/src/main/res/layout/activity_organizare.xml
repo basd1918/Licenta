@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/button_adauga"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrganizareActivity"
+    android:background="@drawable/oras4">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <TextView
+        android:id="@+id/textViewOpt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="center"
+        android:layout_marginTop="25dp"
+        android:text="Gestiunea apartamentelor"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="25sp"
+        android:typeface="serif" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="82dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="#fff"
+            android:drawableLeft="@drawable/add_icon"
+            android:padding="10dp"
+            android:text="Adaugă apartament nou"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/button_modifica"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="#fff"
+            android:drawableLeft="@drawable/edit_icon"
+            android:padding="10dp"
+            android:text="modifică apartament"
+            android:layout_marginBottom="10dp"/>
+        <Button
+            android:id="@+id/button_sterge"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="#fff"
+            android:drawableLeft="@drawable/delete_icon"
+            android:padding="10dp"
+            android:text="Șterge apartament"
+            android:layout_marginBottom="10dp"/>
+        <Button
+            android:visibility="gone"
+            android:id="@+id/button_lista"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="#fff"
+            android:drawableLeft="@drawable/list_icon"
+            android:padding="10dp"
+            android:text="vezi lista locatari" />
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

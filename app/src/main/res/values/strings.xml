@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Administrator</string>
+
+    <string-array name="luni">
+        <item>Ianuarie</item>
+        <item>Februarie</item>
+        <item>Martie</item>
+        <item>Aprilie</item>
+        <item>Mai</item>
+        <item>Iunie</item>
+        <item>Iulie</item>
+        <item>August</item>
+        <item>Septembrie</item>
+        <item>Octombrie</item>
+        <item>Noiembrie</item>
+        <item>Decembrie</item>
+    </string-array>
+
+    <string-array name="status">
+        <item>status</item>
+        <item>neachitat</item>
+        <item>achitat</item>
+    </string-array>
+</resources>

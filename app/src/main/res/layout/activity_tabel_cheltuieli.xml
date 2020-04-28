@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/oras4"
+        tools:context=".TabelCheltuieliActivity">
+    <Button
+
+        android:id="@+id/buttonInfoTabelCheltuieli"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="3dp"
+
+        android:background="@drawable/info_icon"/>
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal"
+            android:background="#88141414"
+            android:text="Tabel Cheltuieli"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="40dp" />
+    <TextView
+        android:textAlignment="center"
+        android:id="@+id/tvY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tabel Cheltuieli"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="25sp"
+        android:typeface="serif"/>
+
+    <RelativeLayout
+        android:id="@+id/relY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvY" >
+    <Button
+        android:id="@+id/buttonLupa"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/search_icon"
+        />
+    </RelativeLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:background="#AE3F51B5"
+        android:id="@+id/linY"
+        android:layout_below="@+id/tvY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:padding="15dp">
+        <Button
+            android:id="@+id/buttonInchide"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/close_icon"/>
+        <Spinner
+            android:background="#F0FFFFFF"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40.5dp"
+            android:id="@+id/spinnerLuniTabelCheltuieli">
+        </Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anul"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="14dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="3dp"/>
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:id="@+id/editTextAnTabelCheltuieli"
+            android:background="#F0FFFFFF"
+            android:inputType="number"/>
+        <Button
+            android:id="@+id/buttonOkTabelCheltuieli"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:text="ok"
+            />
+
+    </LinearLayout>
+
+        <ListView
+            android:layout_below="@+id/linY"
+            android:layout_marginTop="27dp"
+            android:id="@+id/listViewIntretinereLista"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"></ListView>
+
+    </RelativeLayout>

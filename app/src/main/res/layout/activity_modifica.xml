@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModificaActivity"
+    android:background="@drawable/oras4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textView2Opt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modifică apartament"
+            android:layout_marginTop="25dp"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="25sp"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/editText_numarAp2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:hint="Număr apartament"
+            android:inputType="number"
+            android:typeface="serif"
+            />
+
+        <EditText
+            android:id="@+id/editText_numeProprietar2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:hint="Nume proprietar"
+            android:inputType="text"
+            android:typeface="serif" />
+        <EditText
+            android:id="@+id/editText_email2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:paddingHorizontal="10dp"
+            android:ems="10"
+            android:background="#ffffff"
+            android:hint="Adresă de mail"
+            android:inputType="textEmailAddress"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/editText_ocupatie2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:hint="Suprafață apartament"
+            android:inputType="numberDecimal"
+            android:paddingHorizontal="10dp"
+            android:typeface="serif" />
+
+
+        <EditText
+            android:id="@+id/editText_numarPersoane2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:hint="Număr persoane"
+            android:inputType="number"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/buttonUpdate"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modifică"
+            android:typeface="serif" />
+    </LinearLayout>
+
+</ScrollView>
